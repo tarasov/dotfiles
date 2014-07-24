@@ -1,11 +1,11 @@
 set nocompatible
 filetype off
 
-source ~/.vim/bundles
+source ~/.dotfiles/vim/bundles
 
-source ~/.vim/keymaps
+source ~/.dotfiles/vim/keymaps
 
-source ~/.vim/bundle/BufOnly.vim
+source ~/.dotfiles/vim/bundle/BufOnly.vim
 
 set noswapfile
 set smarttab smartindent
@@ -25,17 +25,10 @@ nmap <leader>w :silent !google-chrome %<CR>
 
 syntax on
 
-colorscheme tomm
-
 match Error /\s\+$/
 match Error /\t/
 
 filetype plugin indent on
-
-" GVIM
-set guioptions=m  "remove menu bar & remove right-hand and left-hand scroll bar
-set guioptions-=lLrR  "remove menu bar & remove right-hand and left-hand scroll bar
-set guifont=Terminus
 
 set wildmenu
 set colorcolumn=80
