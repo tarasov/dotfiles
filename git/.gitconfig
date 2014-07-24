@@ -1,0 +1,26 @@
+[alias]
+    cam = commit -am
+    po = pull origin
+    fo = fetch origin
+    ch = checkout
+    cm = commit -m
+    st = status
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    dm = diff master
+    dom = diff origin/master
+    amend = commit --amend
+    continue = rebase --continue
+    abort = rebase --abort
+    mnf = merge --no-ff
+    prom = pull --rebase origin master
+    mylog = log --color --graph --all --author=tarasov --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)' --abbrev-commit
+[user]
+    name = Ruslan Tarasov
+    email = ruslan.tarasov2@gmail.com
+[color]
+    diff = true
+    status = true
+[core]
+    editor=vim
+[push]
+    default=current

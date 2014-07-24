@@ -1,0 +1,38 @@
+" vim: ft=vim
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+" NERDTree
+nmap <Leader>T :NERDTreeToggle<CR>
+nmap <Leader>F :NERDTreeFind<CR>
+
+" rnu switcher
+function! ToggleRNU()
+   if(&relativenumber == 1)
+     set relativenumber!
+   else
+     set relativenumber
+   endif
+endfunc
+
+nnoremap <Leader>n :call ToggleRNU()<cr>
+
+function! ToggleHLSearch()
+    if(&hlsearch == 1)
+        set nohlsearch
+    else
+        set hlsearch
+    endif
+endfunc
+
+nnoremap <Leader>/ :call ToggleHLSearch()<cr>
+nnoremap # :set hlsearch<cr>#
+nnoremap ? :set hlsearch<cr>?
+nnoremap / :set hlsearch<cr>/
+
+nnoremap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
+
+nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>s :Ack<cr>
+
+
+nnoremap <silent><leader>d :confirm bdelete<cr>

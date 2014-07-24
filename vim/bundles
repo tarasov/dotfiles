@@ -1,0 +1,75 @@
+" vim: ft=vim
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'airblade/vim-gitgutter'
+
+Bundle 'bling/vim-airline'
+
+Bundle 'Valloric/YouCompleteMe'
+
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimproc.vim'
+
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+
+Bundle 'kchmck/vim-coffee-script'
+
+Bundle 'chriskempson/vim-tomorrow-theme'
+
+Bundle 'tpope/vim-commentary'
+
+Bundle 'tpope/vim-fugitive'
+
+Bundle 'vim-ruby/vim-ruby'
+
+"" Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+Bundle 'kien/ctrlp.vim'
+
+Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'fisadev/vim-isort'
+Bundle 'heavenshell/vim-pydocstring'
+
+Plugin 'mileszs/ack.vim'
+
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+let g:syntastic_python_checkers = ['flake8']
+
+" Автоматический insert mode
+let g:unite_enable_start_insert = 1
+" Отображение Unite в нижней части экрана
+let g:unite_split_rule = "botright"
+" Отключаем замену статус строки
+let g:unite_force_overwrite_statusline = 0
+" Размер окна Unite
+let g:unite_winheight = 10
+" Красивые стрелочки
+let g:unite_candidate_icon="▷"
+
+
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
+let g:virtualenv_directory="~/.envs"
+
+let NERDTreeIgnore=['\.pyc$', '\.map$']
+
+let g:airline_enable_branch=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_left_sep='▶'
+let g:airline_right_sep='◀'
+let g:airline#extensions#tabline#left_sep = '▶'
+let g:airline#extensions#tabline#left_alt_sep = '▷'
+
+" YCM
+let g:ycm_server_keep_logfiles = 1
+
+set wildignore+=*.map,*.pyc
+
