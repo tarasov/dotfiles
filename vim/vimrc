@@ -34,3 +34,9 @@ set wildmenu
 set colorcolumn=80
 
 au BufNewFile,BufRead,BufNewFile *.handlebars,*.hbs set ft=html sw=2
+
+set background=dark
+colorscheme Tomorrow-Night
+set guifont=Source\ Code\ Pro\ ExtraLight:h11
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE

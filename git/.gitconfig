@@ -5,7 +5,6 @@
     ch = checkout
     cm = commit -m
     st = status
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     dm = diff master
     dom = diff origin/master
     amend = commit --amend
@@ -13,7 +12,10 @@
     abort = rebase --abort
     mnf = merge --no-ff
     prom = pull --rebase origin master
-    mylog = log --color --graph --all --author=tarasov --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)' --abbrev-commit
+
+    lognew = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad)' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    mylog = log --color --graph --author=tarasov --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad)' --abbrev-commit
 [user]
     name = Ruslan Tarasov
     email = ruslan.tarasov2@gmail.com

@@ -1,2 +1,3 @@
 set background=dark
 colorscheme Tomorrow-Night
+set guifont=Source\ Code\ Pro\ ExtraLight:h11
