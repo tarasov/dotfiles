@@ -17,6 +17,7 @@ set shiftwidth=4
 set expandtab
 
 autocmd FileType python setlocal et ts=4 sw=4
+autocmd FileType html setlocal et ts=2 sw=2
 autocmd FileType coffee setlocal et ts=2 sw=2
 
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -31,7 +32,7 @@ match Error /\t/
 filetype plugin indent on
 
 set wildmenu
-set colorcolumn=80
+set colorcolumn=120
 
 au BufNewFile,BufRead,BufNewFile *.handlebars,*.hbs set ft=html sw=2
 
