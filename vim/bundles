@@ -15,7 +15,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'kchmck/vim-coffee-script'
 
-Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'flazz/vim-colorschemes'
 
 Plugin 'tpope/vim-commentary'
 
@@ -38,12 +38,8 @@ Plugin 'gregsexton/gitv'
 
 Plugin 'vasconcelloslf/vim-interestingwords'
 
-Plugin 'wting/rust.vim'
-Plugin 'phildawes/racer'
+Plugin 'vim-javascript'
 
-set hidden
-let g:racer_cmd = "/Users/tarasov/.vim/bundle/racer/target/release/racer"
-let RUST_SRC_PATH = "/Users/tarasov/temp/rustc-nightly/src"
 
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_add_preview_to_completeopt = 1
