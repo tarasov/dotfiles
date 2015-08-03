@@ -41,3 +41,5 @@ colorscheme Tomorrow-Night
 set guifont=Source\ Code\ Pro\ ExtraLight:h11
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
+
+set exrc

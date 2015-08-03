@@ -1,7 +1,11 @@
 [submodule "vim/bundle/vundle"]
-	path = vim/bundle/vundle
-	url = git@github.com:gmarik/Vundle.vim.git
+    path = vim/bundle/vundle
+    url = git@github.com:gmarik/Vundle.vim.git
 
 [submodule "iterm2"]
-	path = iterm2
-	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+    path = iterm2
+    url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+
+[submodule "tmux/plugins/tpm"]
+    path = tmux/plugins/tpm
+    url = git@github.com:tmux-plugins/tpm.git

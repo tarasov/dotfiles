@@ -5,6 +5,9 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLM
 nmap <Leader>T :NERDTreeToggle<CR>
 nmap <Leader>F :NERDTreeFind<CR>
 
+" Tagba
+nmap <F8> :TagbarToggle<CR>
+
 " rnu switcher
 function! ToggleRNU()
    if(&relativenumber == 1)
@@ -36,3 +39,8 @@ nnoremap <leader>s :Ack<cr>
 
 
 nnoremap <silent><leader>d :confirm bdelete<cr>
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
