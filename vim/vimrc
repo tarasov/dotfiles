@@ -28,6 +28,9 @@ syntax on
 
 match Error /\s\+$/
 match Error /\t/
+match Error /\s\+$/
+match Error /\S\zs\s\+$/
+match Error / \+\ze\t/
 
 filetype plugin indent on
 
@@ -36,10 +39,16 @@ set colorcolumn=120
 
 au BufNewFile,BufRead,BufNewFile *.handlebars,*.hbs set ft=html sw=2
 
-set background=dark
-colorscheme Tomorrow-Night
-set guifont=Source\ Code\ Pro\ ExtraLight:h11
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
 set exrc
+
+let g:airline_theme = "hybrid"
+
+let g:python_host_prog='/usr/bin/python'
+set mouse-=a 
+let g:hybrid_use_iTerm_colors = 1
+set background=light
+colorscheme solarized
+let g:solarized_termcolors=256
